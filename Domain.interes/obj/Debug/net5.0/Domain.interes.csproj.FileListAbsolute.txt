@@ -1,0 +1,12 @@
+C:\Users\Cristina\source\repos\InteresPratica\Domain.interes\bin\Debug\net5.0\Domain.interes.deps.json
+C:\Users\Cristina\source\repos\InteresPratica\Domain.interes\bin\Debug\net5.0\Domain.interes.dll
+C:\Users\Cristina\source\repos\InteresPratica\Domain.interes\bin\Debug\net5.0\ref\Domain.interes.dll
+C:\Users\Cristina\source\repos\InteresPratica\Domain.interes\bin\Debug\net5.0\Domain.interes.pdb
+C:\Users\Cristina\source\repos\InteresPratica\Domain.interes\obj\Debug\net5.0\Domain.interes.csproj.AssemblyReference.cache
+C:\Users\Cristina\source\repos\InteresPratica\Domain.interes\obj\Debug\net5.0\Domain.interes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cristina\source\repos\InteresPratica\Domain.interes\obj\Debug\net5.0\Domain.interes.AssemblyInfoInputs.cache
+C:\Users\Cristina\source\repos\InteresPratica\Domain.interes\obj\Debug\net5.0\Domain.interes.AssemblyInfo.cs
+C:\Users\Cristina\source\repos\InteresPratica\Domain.interes\obj\Debug\net5.0\Domain.interes.csproj.CoreCompileInputs.cache
+C:\Users\Cristina\source\repos\InteresPratica\Domain.interes\obj\Debug\net5.0\Domain.interes.dll
+C:\Users\Cristina\source\repos\InteresPratica\Domain.interes\obj\Debug\net5.0\ref\Domain.interes.dll
+C:\Users\Cristina\source\repos\InteresPratica\Domain.interes\obj\Debug\net5.0\Domain.interes.pdb

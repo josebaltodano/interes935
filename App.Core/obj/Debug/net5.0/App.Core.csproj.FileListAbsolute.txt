@@ -1,0 +1,12 @@
+C:\Users\Cristina\source\repos\InteresPratica\App.Core\bin\Debug\net5.0\App.Core.deps.json
+C:\Users\Cristina\source\repos\InteresPratica\App.Core\bin\Debug\net5.0\App.Core.dll
+C:\Users\Cristina\source\repos\InteresPratica\App.Core\bin\Debug\net5.0\ref\App.Core.dll
+C:\Users\Cristina\source\repos\InteresPratica\App.Core\bin\Debug\net5.0\App.Core.pdb
+C:\Users\Cristina\source\repos\InteresPratica\App.Core\obj\Debug\net5.0\App.Core.csproj.AssemblyReference.cache
+C:\Users\Cristina\source\repos\InteresPratica\App.Core\obj\Debug\net5.0\App.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cristina\source\repos\InteresPratica\App.Core\obj\Debug\net5.0\App.Core.AssemblyInfoInputs.cache
+C:\Users\Cristina\source\repos\InteresPratica\App.Core\obj\Debug\net5.0\App.Core.AssemblyInfo.cs
+C:\Users\Cristina\source\repos\InteresPratica\App.Core\obj\Debug\net5.0\App.Core.csproj.CoreCompileInputs.cache
+C:\Users\Cristina\source\repos\InteresPratica\App.Core\obj\Debug\net5.0\App.Core.dll
+C:\Users\Cristina\source\repos\InteresPratica\App.Core\obj\Debug\net5.0\ref\App.Core.dll
+C:\Users\Cristina\source\repos\InteresPratica\App.Core\obj\Debug\net5.0\App.Core.pdb

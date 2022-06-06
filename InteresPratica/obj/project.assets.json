@@ -1,0 +1,140 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0-windows7.0": {
+      "App.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/App.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/App.Core.dll": {}
+        }
+      },
+      "Domain.interes/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Domain.interes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.interes.dll": {}
+        }
+      },
+      "Infraestructure.interes/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Domain.interes": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infraestructure.interes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infraestructure.interes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "App.Core/1.0.0": {
+      "type": "project",
+      "path": "../App.Core/App.Core.csproj",
+      "msbuildProject": "../App.Core/App.Core.csproj"
+    },
+    "Domain.interes/1.0.0": {
+      "type": "project",
+      "path": "../Domain.interes/Domain.interes.csproj",
+      "msbuildProject": "../Domain.interes/Domain.interes.csproj"
+    },
+    "Infraestructure.interes/1.0.0": {
+      "type": "project",
+      "path": "../Infraestructure.interes/Infraestructure.interes.csproj",
+      "msbuildProject": "../Infraestructure.interes/Infraestructure.interes.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0-windows7.0": [
+      "App.Core >= 1.0.0",
+      "Domain.interes >= 1.0.0",
+      "Infraestructure.interes >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Cristina\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\InteresPratica\\InteresPratica.csproj",
+      "projectName": "InteresPratica",
+      "projectPath": "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\InteresPratica\\InteresPratica.csproj",
+      "packagesPath": "C:\\Users\\Cristina\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\InteresPratica\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Cristina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "projectReferences": {
+            "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\App.Core\\App.Core.csproj": {
+              "projectPath": "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\App.Core\\App.Core.csproj"
+            },
+            "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\Domain.interes\\Domain.interes.csproj": {
+              "projectPath": "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\Domain.interes\\Domain.interes.csproj"
+            },
+            "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\Infraestructure.interes\\Infraestructure.interes.csproj": {
+              "projectPath": "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\Infraestructure.interes\\Infraestructure.interes.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0-windows7.0": {
+        "targetAlias": "net5.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.15, 5.0.15]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

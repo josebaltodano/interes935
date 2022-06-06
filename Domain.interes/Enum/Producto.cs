@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Domain.interes.Enum
+{
+     public enum Producto 
+    {
+        anual ,
+        trimestres ,
+        cuatrimestres,
+        Mensual ,
+        semestre,
+        Semanal 
+    }
+}

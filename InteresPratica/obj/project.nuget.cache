@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "EmpQ0ualckkrigeQ4GLD4T3u3QG/eBY4YZZEFTY+Eq1ByW4x5Gz1pibY0lgvh5VQ+xMdW0CjLXIgtky4iavgeA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\InteresPratica\\InteresPratica.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Cristina\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.15\\microsoft.netcore.app.host.win-x64.5.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}
