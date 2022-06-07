@@ -9,12 +9,12 @@ namespace Domain.interes.Interfaces
 {
      public interface IInteres : IRepository<Interes>
     {
-        double Getfuturo(double futuro, double M);
+        double Getfuturo(double Nominal, double M,double Presente,double periodo);
         double GetPresente(double presente);
         double GeTPeriodo(double periodo);
         double ConvertEfectiva(double efectiva);
         double ConvetNominal(double nominal);
-        double ConvertExponencial(double exponecail);
+        double ConvertExponencial(Interes interes);
         double EfectivaContinua(double efectiva);
     }
 }

@@ -22,3 +22,29 @@ C:\Users\Cristina\source\repos\InteresPratica\InteresPratica\bin\Debug\net5.0-wi
 C:\Users\Cristina\source\repos\InteresPratica\InteresPratica\bin\Debug\net5.0-windows\Infraestructure.interes.dll
 C:\Users\Cristina\source\repos\InteresPratica\InteresPratica\bin\Debug\net5.0-windows\App.Core.pdb
 C:\Users\Cristina\source\repos\InteresPratica\InteresPratica\bin\Debug\net5.0-windows\Infraestructure.interes.pdb
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\bin\Debug\net5.0-windows\InteresPratica.exe
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\bin\Debug\net5.0-windows\InteresPratica.deps.json
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\bin\Debug\net5.0-windows\InteresPratica.runtimeconfig.json
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\bin\Debug\net5.0-windows\InteresPratica.runtimeconfig.dev.json
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\bin\Debug\net5.0-windows\InteresPratica.dll
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\bin\Debug\net5.0-windows\ref\InteresPratica.dll
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\bin\Debug\net5.0-windows\InteresPratica.pdb
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\bin\Debug\net5.0-windows\App.Core.dll
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\bin\Debug\net5.0-windows\Domain.interes.dll
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\bin\Debug\net5.0-windows\Infraestructure.interes.dll
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\bin\Debug\net5.0-windows\App.Core.pdb
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\bin\Debug\net5.0-windows\Domain.interes.pdb
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\bin\Debug\net5.0-windows\Infraestructure.interes.pdb
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.csproj.AssemblyReference.cache
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.Form1.resources
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.csproj.GenerateResource.cache
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.AssemblyInfoInputs.cache
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.AssemblyInfo.cs
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.csproj.CoreCompileInputs.cache
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.csproj.CopyComplete
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.dll
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\obj\Debug\net5.0-windows\ref\InteresPratica.dll
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.pdb
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.genruntimeconfig.cache
+C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\bin\Debug\net5.0-windows\Autofac.dll

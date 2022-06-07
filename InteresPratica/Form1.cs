@@ -16,13 +16,14 @@ namespace InteresPratica
 {
     public partial class Form1 : Form
     {
-        public IINteresServices iNteresServices { get; set; }
+        public IINteresServices iNteresServices;
         private static double E = 0;
-        public Form1()
+        public Form1(IINteresServices iNteres)
         {
-
+            
             InitializeComponent();
             this.comboBox1.Items.AddRange(Enum.GetValues(typeof(Producto)).Cast<object>().ToArray());
+            this.iNteresServices = iNteres;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -81,18 +82,7 @@ namespace InteresPratica
         private void button1_Click(object sender, EventArgs e)
         {
             double m =ConvertM();
-
-            
-            Interes inte = new Interes()
-            {
-                presente = Convert.ToDouble(textBox1.Text),
-                Futuro = Convert.ToDouble(textBox2.Text),
-                periodo = Convert.ToDouble(textBox3.Text),
-                nominal = Convert.ToDouble(textBox4.Text),
-                
-
-            };
-            label1.Text = iNteresServices.Getfuturo(m).ToString();
+            label1.Text = iNteresServices.Getfuturo(double.Parse(textBox4.Text), m, double.Parse(textBox1.Text), double.Parse(textBox3.Text)).ToString();
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -106,7 +96,7 @@ namespace InteresPratica
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+         
         }
 
         private void label13_Click(object sender, EventArgs e)
@@ -116,12 +106,7 @@ namespace InteresPratica
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
-            Interes inte = new Interes()
-            {
-                nominal = double.Parse(textBox7.Text)
-            };
-            label14.Text = iNteresServices.ConvertExponencial(E).ToString();
+         
         }
     }
 }

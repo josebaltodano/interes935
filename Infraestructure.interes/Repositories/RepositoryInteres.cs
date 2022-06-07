@@ -34,8 +34,7 @@ namespace Infraestructure.interes.Repositories
                 {
                     throw new Exception($"El Interes {exponecail} No puede ser Cero");
                 }
-                Interes inte = new Interes();
-                exponecail = inte.nominal / 100;
+                double cotinua = exponecail / 100;
                   efectiva   = Math.Exp(exponecail) - 1;
                 return efectiva;
             }
@@ -43,6 +42,13 @@ namespace Infraestructure.interes.Repositories
             {
                 throw;
             }
+        }
+
+        public double ConvertExponencial(Interes interes)
+        {
+            double expone = interes.nominal / 100;
+            double efe = Math.Exp(expone) - 1;
+            return efe;
         }
 
         public double ConvetNominal(double nominal)
@@ -92,6 +98,13 @@ namespace Infraestructure.interes.Repositories
                 throw;
             }
            
+        }
+
+        public double Getfuturo(double Nominal, double M, double Presente, double periodo)
+        {
+            double J = Nominal / 100;
+            double futuro = Presente * Math.Pow(1 + J, -1 * M * periodo);
+            return futuro;
         }
 
         public double GeTPeriodo(double periodo)

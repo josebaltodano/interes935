@@ -1,3 +1,8 @@
+using App.Core.Iserveices;
+using App.Core.Services;
+using Autofac;
+using Domain.interes.Interfaces;
+using Infraestructure.interes.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +22,11 @@ namespace InteresPratica
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            var builder = new ContainerBuilder();
+            builder.RegisterType<RepositoryInteres>().As<IInteres>();
+            builder.RegisterType<InteresServices>().As<IINteresServices>();
+            var container = builder.Build();
+            Application.Run(new Form1(container.Resolve<IINteresServices>()));
         }
     }
 }

@@ -2,9 +2,33 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
+      "Autofac/6.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "4.7.1"
+        },
+        "compile": {
+          "lib/net5.0/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Autofac.dll": {}
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/4.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+        }
+      },
       "App.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Domain.interes": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/App.Core.dll": {}
         },
@@ -38,6 +62,53 @@
     }
   },
   "libraries": {
+    "Autofac/6.4.0": {
+      "sha512": "tkFxl6wAPuwVhrlN8wuNADnd+k2tv4ReP7ZZSL0vjfcN0RcfC9v25ogxK6b03HC7D4NwWjSLf1G/zTG8Bw43wQ==",
+      "type": "package",
+      "path": "autofac/6.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "autofac.6.4.0.nupkg.sha512",
+        "autofac.nuspec",
+        "icon.png",
+        "lib/net5.0/Autofac.dll",
+        "lib/net5.0/Autofac.xml",
+        "lib/net6.0/Autofac.dll",
+        "lib/net6.0/Autofac.xml",
+        "lib/netstandard2.0/Autofac.dll",
+        "lib/netstandard2.0/Autofac.xml",
+        "lib/netstandard2.1/Autofac.dll",
+        "lib/netstandard2.1/Autofac.xml"
+      ]
+    },
+    "System.Diagnostics.DiagnosticSource/4.7.1": {
+      "sha512": "j81Lovt90PDAq8kLpaJfJKV/rWdWuEk6jfV+MBkee33vzYLEUsy4gXK8laa9V2nZlLM9VM9yA/OOQxxPEJKAMw==",
+      "type": "package",
+      "path": "system.diagnostics.diagnosticsource/4.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net45/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net46/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net46/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.xml",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.dll",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.xml",
+        "system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "App.Core/1.0.0": {
       "type": "project",
       "path": "../App.Core/App.Core.csproj",
@@ -57,24 +128,29 @@
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
       "App.Core >= 1.0.0",
+      "Autofac >= 6.4.0",
       "Domain.interes >= 1.0.0",
       "Infraestructure.interes >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Cristina\\.nuget\\packages\\": {}
+    "C:\\Users\\JADPA20\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\InteresPratica\\InteresPratica.csproj",
+      "projectUniqueName": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\InteresPratica\\InteresPratica.csproj",
       "projectName": "InteresPratica",
-      "projectPath": "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\InteresPratica\\InteresPratica.csproj",
-      "packagesPath": "C:\\Users\\Cristina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\InteresPratica\\obj\\",
+      "projectPath": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\InteresPratica\\InteresPratica.csproj",
+      "packagesPath": "C:\\Users\\JADPA20\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\InteresPratica\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Cristina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JADPA20\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -88,14 +164,14 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\App.Core\\App.Core.csproj": {
-              "projectPath": "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\App.Core\\App.Core.csproj"
+            "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\App.Core\\App.Core.csproj": {
+              "projectPath": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\App.Core\\App.Core.csproj"
             },
-            "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\Domain.interes\\Domain.interes.csproj": {
-              "projectPath": "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\Domain.interes\\Domain.interes.csproj"
+            "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\Domain.interes\\Domain.interes.csproj": {
+              "projectPath": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\Domain.interes\\Domain.interes.csproj"
             },
-            "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\Infraestructure.interes\\Infraestructure.interes.csproj": {
-              "projectPath": "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\Infraestructure.interes\\Infraestructure.interes.csproj"
+            "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\Infraestructure.interes\\Infraestructure.interes.csproj": {
+              "projectPath": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\Infraestructure.interes\\Infraestructure.interes.csproj"
             }
           }
         }
@@ -109,6 +185,12 @@
     "frameworks": {
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
+        "dependencies": {
+          "Autofac": {
+            "target": "Package",
+            "version": "[6.4.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -119,12 +201,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.15, 5.0.15]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

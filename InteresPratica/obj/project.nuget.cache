@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "EmpQ0ualckkrigeQ4GLD4T3u3QG/eBY4YZZEFTY+Eq1ByW4x5Gz1pibY0lgvh5VQ+xMdW0CjLXIgtky4iavgeA==",
+  "dgSpecHash": "QjniwmHZAGimDCKozjjfkI+TXYfIJ4AYZLkfFlOJxi+5dOLzTBW7Njr8d/zSrrBZ6JVv6nIHz/H5saaE8JwjIA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cristina\\source\\repos\\InteresPratica\\InteresPratica\\InteresPratica.csproj",
+  "projectFilePath": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\InteresPratica\\InteresPratica.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Cristina\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.15\\microsoft.netcore.app.host.win-x64.5.0.15.nupkg.sha512"
+    "C:\\Users\\JADPA20\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
+    "C:\\Users\\JADPA20\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }

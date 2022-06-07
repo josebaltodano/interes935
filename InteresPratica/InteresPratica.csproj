@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\App.Core\App.Core.csproj" />
     <ProjectReference Include="..\Domain.interes\Domain.interes.csproj" />
     <ProjectReference Include="..\Infraestructure.interes\Infraestructure.interes.csproj" />
