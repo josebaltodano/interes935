@@ -134,23 +134,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JADPA20\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Cristina\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\InteresPratica\\InteresPratica.csproj",
+      "projectUniqueName": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta\\interes935\\InteresPratica\\InteresPratica.csproj",
       "projectName": "InteresPratica",
-      "projectPath": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\InteresPratica\\InteresPratica.csproj",
-      "packagesPath": "C:\\Users\\JADPA20\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\InteresPratica\\obj\\",
+      "projectPath": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta\\interes935\\InteresPratica\\InteresPratica.csproj",
+      "packagesPath": "C:\\Users\\Cristina\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta\\interes935\\InteresPratica\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\JADPA20\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cristina\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -164,14 +160,14 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\App.Core\\App.Core.csproj": {
-              "projectPath": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\App.Core\\App.Core.csproj"
+            "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta\\interes935\\App.Core\\App.Core.csproj": {
+              "projectPath": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta\\interes935\\App.Core\\App.Core.csproj"
             },
-            "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\Domain.interes\\Domain.interes.csproj": {
-              "projectPath": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\Domain.interes\\Domain.interes.csproj"
+            "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta\\interes935\\Domain.interes\\Domain.interes.csproj": {
+              "projectPath": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta\\interes935\\Domain.interes\\Domain.interes.csproj"
             },
-            "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\Infraestructure.interes\\Infraestructure.interes.csproj": {
-              "projectPath": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\Infraestructure.interes\\Infraestructure.interes.csproj"
+            "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta\\interes935\\Infraestructure.interes\\Infraestructure.interes.csproj": {
+              "projectPath": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta\\interes935\\Infraestructure.interes\\Infraestructure.interes.csproj"
             }
           }
         }
@@ -201,6 +197,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.15, 5.0.15]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

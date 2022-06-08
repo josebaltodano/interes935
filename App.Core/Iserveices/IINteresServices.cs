@@ -10,11 +10,12 @@ namespace App.Core.Iserveices
    public interface IINteresServices
     {
         double Getfuturo(double Nominal, double M, double Presente, double periodo);
-        double GetPresente(double presente);
-        double GeTPeriodo(double periodo);
-        double ConvertEfectiva(double efectiva);
-        double ConvetNominal(double nominal);
+        double GetPresente(Interes interes);
+   
+        double GeTPeriodo(double nominal, double M, double presente, double futuro);
+        double ConvertEfectiva(Interes interes);
+        double ConvetNominal(Interes interes);
         double ConvertExponencial(Interes interes);
-        double EfectivaContinua(double efectiva);
+        double EfectivaContinua(Interes interes);
     }
 }

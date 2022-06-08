@@ -27,3 +27,17 @@ C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\Infraestructure.interes\ob
 C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\Infraestructure.interes\obj\Debug\net5.0\Infraestructure.interes.dll
 C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\Infraestructure.interes\obj\Debug\net5.0\ref\Infraestructure.interes.dll
 C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\Infraestructure.interes\obj\Debug\net5.0\Infraestructure.interes.pdb
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\bin\Debug\net5.0\Infraestructure.interes.deps.json
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\bin\Debug\net5.0\Infraestructure.interes.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\bin\Debug\net5.0\ref\Infraestructure.interes.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\bin\Debug\net5.0\Infraestructure.interes.pdb
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\bin\Debug\net5.0\Domain.interes.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\bin\Debug\net5.0\Domain.interes.pdb
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\obj\Debug\net5.0\Infraestructure.interes.csproj.AssemblyReference.cache
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\obj\Debug\net5.0\Infraestructure.interes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\obj\Debug\net5.0\Infraestructure.interes.AssemblyInfoInputs.cache
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\obj\Debug\net5.0\Infraestructure.interes.AssemblyInfo.cs
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\obj\Debug\net5.0\Infraestructure.interes.csproj.CoreCompileInputs.cache
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\obj\Debug\net5.0\Infraestructure.interes.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\obj\Debug\net5.0\ref\Infraestructure.interes.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\obj\Debug\net5.0\Infraestructure.interes.pdb

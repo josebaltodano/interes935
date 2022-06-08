@@ -48,3 +48,28 @@ C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\obj\Debug\n
 C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.pdb
 C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.genruntimeconfig.cache
 C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\InteresPratica\bin\Debug\net5.0-windows\Autofac.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bin\Debug\net5.0-windows\InteresPratica.exe
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bin\Debug\net5.0-windows\InteresPratica.deps.json
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bin\Debug\net5.0-windows\InteresPratica.runtimeconfig.json
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bin\Debug\net5.0-windows\InteresPratica.runtimeconfig.dev.json
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bin\Debug\net5.0-windows\InteresPratica.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bin\Debug\net5.0-windows\ref\InteresPratica.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bin\Debug\net5.0-windows\InteresPratica.pdb
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bin\Debug\net5.0-windows\Autofac.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bin\Debug\net5.0-windows\App.Core.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bin\Debug\net5.0-windows\Domain.interes.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bin\Debug\net5.0-windows\Infraestructure.interes.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bin\Debug\net5.0-windows\App.Core.pdb
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bin\Debug\net5.0-windows\Domain.interes.pdb
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bin\Debug\net5.0-windows\Infraestructure.interes.pdb
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.csproj.AssemblyReference.cache
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.Form1.resources
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.csproj.GenerateResource.cache
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.AssemblyInfoInputs.cache
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.AssemblyInfo.cs
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.csproj.CoreCompileInputs.cache
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\ref\InteresPratica.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.pdb
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.genruntimeconfig.cache

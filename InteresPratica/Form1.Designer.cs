@@ -30,17 +30,17 @@ namespace InteresPratica
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtpresente = new System.Windows.Forms.TextBox();
+            this.txtfuturo = new System.Windows.Forms.TextBox();
+            this.txtinteres = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txtxaños = new System.Windows.Forms.TextBox();
+            this.lblinteres = new System.Windows.Forms.Label();
+            this.lblfuturo = new System.Windows.Forms.Label();
+            this.llbpresente = new System.Windows.Forms.Label();
+            this.lblaños = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.texnominal = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -50,17 +50,20 @@ namespace InteresPratica
             this.label15 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.llbcapital = new System.Windows.Forms.Label();
+            this.cmbcapital = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbactual = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.cmbdespues = new System.Windows.Forms.ComboBox();
+            this.btnnominal = new System.Windows.Forms.Button();
+            this.btnefectiva = new System.Windows.Forms.Button();
+            this.btnotratasa = new System.Windows.Forms.Button();
+            this.cmbmostrasr = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -73,79 +76,79 @@ namespace InteresPratica
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // txtpresente
             // 
-            this.textBox1.Location = new System.Drawing.Point(167, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(187, 23);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.txtpresente.Location = new System.Drawing.Point(173, 131);
+            this.txtpresente.Name = "txtpresente";
+            this.txtpresente.Size = new System.Drawing.Size(187, 23);
+            this.txtpresente.TabIndex = 2;
+            this.txtpresente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
-            // textBox2
+            // txtfuturo
             // 
-            this.textBox2.Location = new System.Drawing.Point(167, 102);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(187, 23);
-            this.textBox2.TabIndex = 3;
+            this.txtfuturo.Location = new System.Drawing.Point(173, 168);
+            this.txtfuturo.Name = "txtfuturo";
+            this.txtfuturo.Size = new System.Drawing.Size(187, 23);
+            this.txtfuturo.TabIndex = 3;
             // 
-            // textBox3
+            // txtinteres
             // 
-            this.textBox3.Location = new System.Drawing.Point(167, 162);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(187, 23);
-            this.textBox3.TabIndex = 4;
+            this.txtinteres.Location = new System.Drawing.Point(173, 245);
+            this.txtinteres.Name = "txtinteres";
+            this.txtinteres.Size = new System.Drawing.Size(187, 23);
+            this.txtinteres.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(491, 124);
+            this.label1.Location = new System.Drawing.Point(276, 415);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 15);
             this.label1.TabIndex = 5;
             this.label1.Text = "label1";
             // 
-            // textBox4
+            // txtxaños
             // 
-            this.textBox4.Location = new System.Drawing.Point(167, 222);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(187, 23);
-            this.textBox4.TabIndex = 6;
+            this.txtxaños.Location = new System.Drawing.Point(173, 305);
+            this.txtxaños.Name = "txtxaños";
+            this.txtxaños.Size = new System.Drawing.Size(187, 23);
+            this.txtxaños.TabIndex = 6;
             // 
-            // label2
+            // lblinteres
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(80, 165);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 15);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Interes";
+            this.lblinteres.AutoSize = true;
+            this.lblinteres.Location = new System.Drawing.Point(86, 248);
+            this.lblinteres.Name = "lblinteres";
+            this.lblinteres.Size = new System.Drawing.Size(42, 15);
+            this.lblinteres.TabIndex = 7;
+            this.lblinteres.Text = "Interes";
             // 
-            // label3
+            // lblfuturo
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(80, 105);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 15);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Futuro";
+            this.lblfuturo.AutoSize = true;
+            this.lblfuturo.Location = new System.Drawing.Point(86, 137);
+            this.lblfuturo.Name = "lblfuturo";
+            this.lblfuturo.Size = new System.Drawing.Size(42, 15);
+            this.lblfuturo.TabIndex = 8;
+            this.lblfuturo.Text = "Futuro";
             // 
-            // label4
+            // llbpresente
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(80, 51);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 15);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Presente";
+            this.llbpresente.AutoSize = true;
+            this.llbpresente.Location = new System.Drawing.Point(76, 176);
+            this.llbpresente.Name = "llbpresente";
+            this.llbpresente.Size = new System.Drawing.Size(52, 15);
+            this.llbpresente.TabIndex = 9;
+            this.llbpresente.Text = "Presente";
             // 
-            // label5
+            // lblaños
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(80, 225);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 15);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Años";
+            this.lblaños.AutoSize = true;
+            this.lblaños.Location = new System.Drawing.Point(86, 308);
+            this.lblaños.Name = "lblaños";
+            this.lblaños.Size = new System.Drawing.Size(34, 15);
+            this.lblaños.TabIndex = 10;
+            this.lblaños.Text = "Años";
             // 
             // label7
             // 
@@ -156,12 +159,12 @@ namespace InteresPratica
             this.label7.TabIndex = 12;
             this.label7.Text = "Convertido De Tasas";
             // 
-            // textBox5
+            // texnominal
             // 
-            this.textBox5.Location = new System.Drawing.Point(844, 73);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(136, 23);
-            this.textBox5.TabIndex = 13;
+            this.texnominal.Location = new System.Drawing.Point(844, 73);
+            this.texnominal.Name = "texnominal";
+            this.texnominal.Size = new System.Drawing.Size(136, 23);
+            this.texnominal.TabIndex = 13;
             // 
             // textBox7
             // 
@@ -241,22 +244,22 @@ namespace InteresPratica
             this.textBox6.Size = new System.Drawing.Size(136, 23);
             this.textBox6.TabIndex = 25;
             // 
-            // label6
+            // llbcapital
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(58, 283);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 15);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "Capitalizable";
+            this.llbcapital.AutoSize = true;
+            this.llbcapital.Location = new System.Drawing.Point(64, 366);
+            this.llbcapital.Name = "llbcapital";
+            this.llbcapital.Size = new System.Drawing.Size(74, 15);
+            this.llbcapital.TabIndex = 30;
+            this.llbcapital.Text = "Capitalizable";
             // 
-            // comboBox1
+            // cmbcapital
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(167, 280);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(187, 23);
-            this.comboBox1.TabIndex = 29;
+            this.cmbcapital.FormattingEnabled = true;
+            this.cmbcapital.Location = new System.Drawing.Point(173, 363);
+            this.cmbcapital.Name = "cmbcapital";
+            this.cmbcapital.Size = new System.Drawing.Size(187, 23);
+            this.cmbcapital.TabIndex = 29;
             // 
             // label17
             // 
@@ -267,13 +270,13 @@ namespace InteresPratica
             this.label17.TabIndex = 32;
             this.label17.Text = "Capitalizable Actual";
             // 
-            // comboBox2
+            // cmbactual
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(795, 310);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(187, 23);
-            this.comboBox2.TabIndex = 31;
+            this.cmbactual.FormattingEnabled = true;
+            this.cmbactual.Location = new System.Drawing.Point(795, 310);
+            this.cmbactual.Name = "cmbactual";
+            this.cmbactual.Size = new System.Drawing.Size(187, 23);
+            this.cmbactual.TabIndex = 31;
             // 
             // label16
             // 
@@ -302,42 +305,75 @@ namespace InteresPratica
             this.label18.TabIndex = 36;
             this.label18.Text = "Capitalizable que desea tener\r\n";
             // 
-            // comboBox3
+            // cmbdespues
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(795, 358);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(187, 23);
-            this.comboBox3.TabIndex = 35;
+            this.cmbdespues.FormattingEnabled = true;
+            this.cmbdespues.Location = new System.Drawing.Point(795, 358);
+            this.cmbdespues.Name = "cmbdespues";
+            this.cmbdespues.Size = new System.Drawing.Size(187, 23);
+            this.cmbdespues.TabIndex = 35;
             // 
-            // button2
+            // btnnominal
             // 
-            this.button2.Location = new System.Drawing.Point(693, 116);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(68, 31);
-            this.button2.TabIndex = 37;
-            this.button2.Text = "Aceptar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnnominal.Location = new System.Drawing.Point(693, 116);
+            this.btnnominal.Name = "btnnominal";
+            this.btnnominal.Size = new System.Drawing.Size(68, 31);
+            this.btnnominal.TabIndex = 37;
+            this.btnnominal.Text = "Aceptar";
+            this.btnnominal.UseVisualStyleBackColor = true;
+            this.btnnominal.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnefectiva
             // 
-            this.button3.Location = new System.Drawing.Point(693, 209);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(78, 31);
-            this.button3.TabIndex = 38;
-            this.button3.Text = "Aceptar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnefectiva.Location = new System.Drawing.Point(693, 209);
+            this.btnefectiva.Name = "btnefectiva";
+            this.btnefectiva.Size = new System.Drawing.Size(78, 31);
+            this.btnefectiva.TabIndex = 38;
+            this.btnefectiva.Text = "Aceptar";
+            this.btnefectiva.UseVisualStyleBackColor = true;
+            this.btnefectiva.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btnotratasa
             // 
-            this.button4.Location = new System.Drawing.Point(668, 399);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(68, 31);
-            this.button4.TabIndex = 39;
-            this.button4.Text = "Aceptar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnotratasa.Location = new System.Drawing.Point(668, 399);
+            this.btnotratasa.Name = "btnotratasa";
+            this.btnotratasa.Size = new System.Drawing.Size(68, 31);
+            this.btnotratasa.TabIndex = 39;
+            this.btnotratasa.Text = "Aceptar";
+            this.btnotratasa.UseVisualStyleBackColor = true;
+            // 
+            // cmbmostrasr
+            // 
+            this.cmbmostrasr.FormattingEnabled = true;
+            this.cmbmostrasr.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.cmbmostrasr.Items.AddRange(new object[] {
+            "Futuro",
+            "Presente",
+            "Periodo",
+            "Convertidor de Tasas"});
+            this.cmbmostrasr.Location = new System.Drawing.Point(173, 55);
+            this.cmbmostrasr.Name = "cmbmostrasr";
+            this.cmbmostrasr.Size = new System.Drawing.Size(179, 23);
+            this.cmbmostrasr.TabIndex = 40;
+            this.cmbmostrasr.SelectedIndexChanged += new System.EventHandler(this.cmbmostrasr_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(200, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 15);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "Que Desea Hacer";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(96, 415);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 15);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "Respuesta";
             // 
             // Form1
             // 
@@ -345,17 +381,20 @@ namespace InteresPratica
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(1008, 501);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cmbmostrasr);
+            this.Controls.Add(this.btnotratasa);
+            this.Controls.Add(this.btnefectiva);
+            this.Controls.Add(this.btnnominal);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cmbdespues);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbactual);
+            this.Controls.Add(this.llbcapital);
+            this.Controls.Add(this.cmbcapital);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label15);
@@ -365,17 +404,17 @@ namespace InteresPratica
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.texnominal);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.lblaños);
+            this.Controls.Add(this.llbpresente);
+            this.Controls.Add(this.lblfuturo);
+            this.Controls.Add(this.lblinteres);
+            this.Controls.Add(this.txtxaños);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtinteres);
+            this.Controls.Add(this.txtfuturo);
+            this.Controls.Add(this.txtpresente);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form1";
@@ -387,17 +426,17 @@ namespace InteresPratica
 
         #endregion
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtpresente;
+        private System.Windows.Forms.TextBox txtfuturo;
+        private System.Windows.Forms.TextBox txtinteres;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtxaños;
+        private System.Windows.Forms.Label lblinteres;
+        private System.Windows.Forms.Label lblfuturo;
+        private System.Windows.Forms.Label llbpresente;
+        private System.Windows.Forms.Label lblaños;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox texnominal;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
@@ -407,17 +446,20 @@ namespace InteresPratica
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label llbcapital;
+        private System.Windows.Forms.ComboBox cmbcapital;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbactual;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ComboBox cmbdespues;
+        private System.Windows.Forms.Button btnnominal;
+        private System.Windows.Forms.Button btnefectiva;
+        private System.Windows.Forms.Button btnotratasa;
+        private System.Windows.Forms.ComboBox cmbmostrasr;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

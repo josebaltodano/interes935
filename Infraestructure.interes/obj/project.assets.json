@@ -27,23 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JADPA20\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Cristina\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\Infraestructure.interes\\Infraestructure.interes.csproj",
+      "projectUniqueName": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta\\interes935\\Infraestructure.interes\\Infraestructure.interes.csproj",
       "projectName": "Infraestructure.interes",
-      "projectPath": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\Infraestructure.interes\\Infraestructure.interes.csproj",
-      "packagesPath": "C:\\Users\\JADPA20\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\Infraestructure.interes\\obj\\",
+      "projectPath": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta\\interes935\\Infraestructure.interes\\Infraestructure.interes.csproj",
+      "packagesPath": "C:\\Users\\Cristina\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta\\interes935\\Infraestructure.interes\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\JADPA20\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cristina\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -57,8 +53,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\Domain.interes\\Domain.interes.csproj": {
-              "projectPath": "C:\\Users\\JADPA20\\Desktop\\Nueva carpeta (2)\\interes935\\Domain.interes\\Domain.interes.csproj"
+            "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta\\interes935\\Domain.interes\\Domain.interes.csproj": {
+              "projectPath": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta\\interes935\\Domain.interes\\Domain.interes.csproj"
             }
           }
         }

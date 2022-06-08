@@ -25,3 +25,18 @@ C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\App.Core\obj\Debug\net5.0\
 C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\App.Core\bin\Debug\net5.0\Domain.interes.dll
 C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\App.Core\bin\Debug\net5.0\Domain.interes.pdb
 C:\Users\JADPA20\Desktop\Nueva carpeta (2)\interes935\App.Core\obj\Debug\net5.0\App.Core.csproj.CopyComplete
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\App.Core\bin\Debug\net5.0\App.Core.deps.json
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\App.Core\bin\Debug\net5.0\App.Core.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\App.Core\bin\Debug\net5.0\ref\App.Core.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\App.Core\bin\Debug\net5.0\App.Core.pdb
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\App.Core\bin\Debug\net5.0\Domain.interes.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\App.Core\bin\Debug\net5.0\Domain.interes.pdb
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\App.Core\obj\Debug\net5.0\App.Core.csproj.AssemblyReference.cache
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\App.Core\obj\Debug\net5.0\App.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\App.Core\obj\Debug\net5.0\App.Core.AssemblyInfoInputs.cache
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\App.Core\obj\Debug\net5.0\App.Core.AssemblyInfo.cs
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\App.Core\obj\Debug\net5.0\App.Core.csproj.CoreCompileInputs.cache
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\App.Core\obj\Debug\net5.0\App.Core.csproj.CopyComplete
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\App.Core\obj\Debug\net5.0\App.Core.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\App.Core\obj\Debug\net5.0\ref\App.Core.dll
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\App.Core\obj\Debug\net5.0\App.Core.pdb
