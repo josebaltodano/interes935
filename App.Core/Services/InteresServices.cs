@@ -15,29 +15,30 @@ namespace App.Core.Services
         {
             this.interes1 = interes;
         }
-        public double ConvertEfectiva(Interes interes)
+       
+
+        public double ConvertEfectiva(double nominal, double M)
         {
-            return interes1.ConvertEfectiva(interes);
+            return interes1.ConvertEfectiva(nominal, M);
         }
 
-        public double ConvertExponencial(double exponecail)
+        public double ConvertExponencial(double nominal)
         {
-            return exponecail;
+            return interes1.ConvertExponencial(nominal);
         }
 
-        public double ConvertExponencial(Interes interes)
+    
+
+    
+
+        public double ConvetNominal(double nominal, double M, double M1)
         {
-            return interes1.ConvertExponencial(interes);
+            return interes1.ConvetNominal(nominal, M, M1);
         }
 
-        public double ConvetNominal(Interes interes)
+        public double EfectivaContinua(double efectiva)
         {
-            return interes1.ConvetNominal(interes);
-        }
-
-        public double EfectivaContinua(Interes interes)
-        {
-            return interes1.EfectivaContinua(interes);
+            return interes1.EfectivaContinua(efectiva);
         }
 
         public double Getfuturo(double Nominal, double M, double Presente, double periodo)
@@ -60,9 +61,9 @@ namespace App.Core.Services
             return interes1.GeTPeriodo(nominal, M, presente, futuro);
         }
 
-        public double GetPresente(Interes interes)
+        public double GetPresente(double nominal, double M, double futuro, double periodo)
         {
-            return interes1.GetPresente(interes);
+            return interes1.GetPresente(nominal, M, futuro, periodo);
         }
     }
 }

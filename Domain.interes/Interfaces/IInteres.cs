@@ -10,11 +10,11 @@ namespace Domain.interes.Interfaces
      public interface IInteres : IRepository<Interes>
     {
         double Getfuturo(double Nominal, double M,double Presente,double periodo);
-        double GetPresente(Interes interes);
+        double GetPresente(double nominal, double M ,double futuro ,double periodo);
         double GeTPeriodo(double nominal ,double M,double presente, double futuro);
-        double ConvertEfectiva(Interes interes);
-        double ConvetNominal(Interes interes);
-        double ConvertExponencial(Interes interes);
-        double EfectivaContinua(Interes interes);
+        double ConvertEfectiva(double nominal,double M);
+        double ConvetNominal(double nominal ,double M,double M1);
+        double ConvertExponencial(double nominal);
+        double EfectivaContinua(double efectiva);
     }
 }

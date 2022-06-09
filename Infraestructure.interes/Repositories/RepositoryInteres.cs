@@ -8,26 +8,19 @@ using System.Threading.Tasks;
 
 namespace Infraestructure.interes.Repositories
 {
-    public class RepositoryInteres : IInteres
+    public class RepositoryInteres : IInteres 
     {
-        public double ConvertEfectiva(Interes interes)
+       
+  
+
+        public double ConvertEfectiva(double nominal, double M)
         {
-            double Efectiva;
-            double fectiva =0;
-
-
-
-            double efectiva;
-           
-
-            efectiva = interes.nominal / 100;
-              fectiva= Math.Pow(Math.Sqrt(1 + efectiva - 1), ((double)interes.producto)) * ((double)interes.producto);
-             Efectiva = fectiva * 100;
-            return  Efectiva;
-
+            double J = nominal / 100;
+            double x = Math.Pow(Math.Sqrt(1 + J -1), M) * M;
+            double y = x * 100;
+            double efectiva = Math.Round(x, 2);
+            return efectiva;
         }
-
-
 
         public double ConvertExponencial(Interes interes)
         {
@@ -36,18 +29,33 @@ namespace Infraestructure.interes.Repositories
             return efe;
         }
 
-        public double ConvetNominal(Interes interes )
+        public double ConvertExponencial(double nominal)
         {
-            double nominal;
-            nominal = interes.nominal / 100;
-            double minal = (Math.Pow(1 + nominal / ((double)interes.producto), ((double)interes.producto) / interes.producto2) - 1) * interes.producto2;
-            double Nominal = minal * 100;
+            double x = nominal / 100;
+            double y = Math.Exp(x) - 1;
+            double o = y * 100;
+            double exponencial = Math.Round(o, 2);
+            return exponencial;
+        }
+
+        public double ConvetNominal(double nominal, double M, double M1)
+        {
+            double J = nominal / 100;
+            double x = (Math.Pow(1+J/M,M/M1)-1)*M1;
+            double minal = x;
+            double N = minal * 100;
+            double Nominal = Math.Round(N, 2);
             return Nominal;
         }
 
         public void Create(Interes t)
         {
-            throw new NotImplementedException();
+           if(t == null)
+            {
+                throw new ArgumentNullException("El objeto no puede ser null");
+
+            }
+           
         }
 
         public bool Delete(Interes t)
@@ -55,12 +63,13 @@ namespace Infraestructure.interes.Repositories
             throw new NotImplementedException();
         }
 
-        public double EfectivaContinua(Interes interes)
+        public double EfectivaContinua(double efectiva)
         {
-           double efectiva;
-            efectiva = interes.nominal / 100;
-            double efecti = Math.Log(1 + Math.Exp(efectiva));
-            return efecti;
+            double x;
+            x =efectiva / 100;
+            double efecti = Math.Log(1 + Math.Exp(x));
+            double nominal = Math.Round(efecti * 100, 2);
+            return nominal;
         }
 
         public List<Interes> GetAll()
@@ -72,34 +81,30 @@ namespace Infraestructure.interes.Repositories
         public double Getfuturo(double Nominal, double M, double Presente, double periodo)
         {
             double J = Nominal / 100;
-            double futuro = Presente * Math.Pow(1 + J /M,  M * periodo);
+            double f = Presente * Math.Pow(1 + J /M,  M * periodo);
+            double futuro = Math.Round(f, 2);
             return futuro;
         }
 
-        public double GeTPeriodo(Interes interes)
-        {
-            double periodo;
-
-            double J = interes.nominal / 100;
-            periodo = (Math.Log(interes.Futuro / interes.presente)) / ((double)interes.producto) * Math.Log(1 + J / ((double)interes.producto));
-            return periodo;
-        }
+      
 
         public double GeTPeriodo(double nominal, double M, double presente, double futuro)
         {
             double J = nominal / 100;
             double años;
             años = (Math.Log(futuro / presente)) / (M * Math.Log(1 + J / M));
-            return años;
+            double periodo = Math.Round(años, 2);
+            return periodo;
         }
 
-        public double GetPresente(Interes interes)
-        {
-            double presente;
-            double pres = interes.nominal / 100 ;
+    
 
-            
-            presente = interes.Futuro * Math.Pow(1 + pres / ((double)interes.producto), -1*pres * interes.periodo);
+        public double GetPresente(double nominal, double M, double futuro, double periodo)
+        {
+            double J = nominal / 100;
+           
+            double x = futuro * Math.Pow(1 + J / M, -1 * M * periodo);
+            double presente = Math.Round(x, 2);
             return presente;
         }
 

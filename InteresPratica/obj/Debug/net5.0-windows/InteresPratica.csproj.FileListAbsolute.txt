@@ -63,7 +63,8 @@ C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bi
 C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bin\Debug\net5.0-windows\Domain.interes.pdb
 C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\bin\Debug\net5.0-windows\Infraestructure.interes.pdb
 C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.csproj.AssemblyReference.cache
-C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.Form1.resources
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.FmrConvertidor.resources
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.FmrInteres.resources
 C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.csproj.GenerateResource.cache
 C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.AssemblyInfoInputs.cache
