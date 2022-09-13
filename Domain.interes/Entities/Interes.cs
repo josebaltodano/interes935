@@ -12,9 +12,9 @@ namespace Domain.interes.Entities
         public double Futuro { get; set; }
         public double presente { get; set; }
         public double nominal { get; set; }
-        public double producto2 { get; set; }
+   
         public double periodo { get; set; }
-        public double M { get; set; }
+
         public Producto producto { get; set; }
 
        

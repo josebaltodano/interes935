@@ -22,10 +22,15 @@ namespace InteresPratica
         {
             
             InitializeComponent();
-            this.cmbcapital.Items.AddRange(Enum.GetValues(typeof(Producto)).Cast<object>().ToArray());
+            this.cmbcapitalanual.Items.AddRange(Enum.GetValues(typeof(Producto)).Cast<object>().ToArray());
+            this.cmbcapcuatrimestre.Items.AddRange(Enum.GetValues(typeof(CapMensualmente)).Cast<object>().ToArray());
+            this.cmbcapsemestre.Items.AddRange(Enum.GetValues(typeof(CAPSemestral)).Cast<object>().ToArray());
+            this.cmbcaptrimsestr.Items.AddRange(Enum.GetValues(typeof(CAPtrimestal)).Cast<object>().ToArray());
+
+
             this.iNteresServices = iNteres;
             this.cmbmostrasr.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.cmbcapital.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.cmbcapitalanual.DropDownStyle = ComboBoxStyle.DropDownList;
 
 
             groupBox1.Visible = false;
@@ -35,41 +40,213 @@ namespace InteresPratica
         {
             
         }
+        public double COsemestral()
+        {
+            double t = 0;
+            if(cmbcapsemestre.SelectedIndex == 0)
+            {
+                t = 1 / 0.5;
+                return t;
+            }
+            else
+            {
+                if(cmbcapsemestre.SelectedIndex == 1)
+                {
+                    t = 1 / 1.5;
+                    return t;
+                }
+                else
+                {
+                    if (cmbcapsemestre.SelectedIndex == 2)
+                    {
+                        t = 1 / 2;
+                        return t;
+                    }
+                    else
+                    {
+                        if(cmbcapsemestre.SelectedIndex == 3)
+                        {
+                            t = 1 / 6;
+                            return t;
+                        }
+                        else
+                        {
+                            if(cmbcapsemestre.SelectedIndex == 4)
+                            {
+                                t = 1 / 26.071428571428573;
+                                return t;
+                            }
+                            else
+                            {
+
+                                if(cmbcapsemestre.SelectedIndex == 5)
+                                {
+                                    t = 1 / 182.5;
+                                    return t;
+                                }
+                                else
+                                {
+                                    return -1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        public double CoTrimestral()
+        {
+            
+            if (cmbcaptrimsestr.SelectedIndex == 0)
+            {
+                 
+                return 1 / 0.25;
+            }
+            else
+            {
+                if (cmbcaptrimsestr.SelectedIndex == 1)
+                {
+
+                    return 1/0.5;
+                }
+                else
+                {
+                    if (cmbcaptrimsestr.SelectedIndex == 2)
+                    {
+                        
+                        return 1/0.75;
+                    }
+                    else
+                    {
+                        if (cmbcaptrimsestr.SelectedIndex == 3)
+                        {
+                            
+                            return 1/3;
+                        }
+                        else
+                        {
+                            if (cmbcaptrimsestr.SelectedIndex == 4)
+                            {
+                                 
+                                return 1 / 13.035714285714286;
+                            }
+                            else
+                            {
+
+                                if (cmbcaptrimsestr.SelectedIndex == 5)
+                                {
+                                    
+                                    return 1 / 90;
+                                }
+                                else
+                                {
+                                    return -1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+  
+        public  double Convertaño()
+        {
+            double a = 0;
+
+            if(cmbcapcuatrimestre.SelectedIndex == 0)
+            {
+                a = 1;
+                return a;
+
+            }
+            else
+            {
+                if(cmbcapcuatrimestre.SelectedIndex == 1)
+                {
+                    a = 1 / 30;
+                    return a;
+                }
+                else
+                {
+                    if(cmbcapcuatrimestre.SelectedIndex == 2)
+                    {
+                        a = 7 / 1;
+                        return a;
+                    }
+                    else
+                    {
+                        if(cmbcapcuatrimestre.SelectedIndex == 3)
+                        {
+                            a = 1 / 365;
+                            return a;
+                        }
+                        else
+                        {
+                            if(cmbcapcuatrimestre.SelectedIndex == 4)
+                            {
+                                a = 365 / 1;
+                                return a;
+                            }
+                            else
+                            {
+                                if(cmbcapcuatrimestre.SelectedIndex == 5)
+                                {
+                                    a = 12 / 1;
+                                    return a;
+                                }
+                                else
+                                {
+                                    if(cmbcapcuatrimestre.SelectedIndex == 5)
+                                    {
+                                        a = 1 / 12;
+                                        return a;
+                                    }
+                                    else
+                                    {
+                                        return -1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         public double  ConvertM()
         {
 
-            if (cmbcapital.SelectedIndex == 0)
+            if (cmbcapitalanual.SelectedIndex == 0)
             {
                 double M = 1;
                 return M;
             }
             else
             {
-                if (cmbcapital.SelectedIndex == 1)
+                if (cmbcapitalanual.SelectedIndex == 1)
                 {
                     return 4;
                 }
                 else
                 {
-                    if (cmbcapital.SelectedIndex == 2)
+                    if (cmbcapitalanual.SelectedIndex == 2)
                     {
                         return 3;
                     }
                     else
                     {
-                        if (cmbcapital.SelectedIndex == 3)
+                        if (cmbcapitalanual.SelectedIndex == 3)
                         {
                             return 12;
                         }
                         else
                         {
-                            if (cmbcapital.SelectedIndex == 4)
+                            if (cmbcapitalanual.SelectedIndex == 4)
                             {
                                 return 2;
                             }
                             else
                             {
-                                if (cmbcapital.SelectedIndex == 5)
+                                if (cmbcapitalanual.SelectedIndex == 5)
                                 {
                                     return 52;
                                 }
@@ -86,8 +263,10 @@ namespace InteresPratica
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            double a = Convertaño();
             double m = ConvertM();
+            double pruebar = CoTrimestral();
+            //double año = double.Parse(txtxaños.Text) * Convertaño();
             if (cmbmostrasr.SelectedIndex == 0)
             {
                 if (string.IsNullOrEmpty(txtpresente.Text) || string.IsNullOrEmpty(txtinteres.Text) || string.IsNullOrEmpty(txtxaños.Text))
@@ -102,7 +281,7 @@ namespace InteresPratica
                     MessageBox.Show("Los Datos No puede ser Negativos  y Tampoco Puden ser cero");
                     return;
                 }
-                label1.Text = iNteresServices.Getfuturo(double.Parse(txtinteres.Text), m, double.Parse(txtpresente.Text), double.Parse(txtxaños.Text)).ToString();
+                label1.Text = iNteresServices.prueba(double.Parse(txtinteres.Text),m,double.Parse(txtxaños.Text),double.Parse(txtpresente.Text),pruebar).ToString();
             }
             else
             {
@@ -143,6 +322,8 @@ namespace InteresPratica
                         }
 
                         label1.Text = iNteresServices.GeTPeriodo(double.Parse(txtinteres.Text), m, double.Parse(txtpresente.Text), double.Parse(txtfuturo.Text)).ToString();
+                        string v = Convert.ToString(double.Parse(txtinteres.Text));
+                        label4.Text = v;
                     }
                 }
             }
@@ -151,7 +332,7 @@ namespace InteresPratica
             
           
         }
-
+   
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -229,7 +410,7 @@ namespace InteresPratica
             txtinteres.Clear();
             txtpresente.Clear();
             txtxaños.Clear();
-            cmbcapital.SelectedIndex =- 1;
+            cmbcapitalanual.SelectedIndex =- 1;
         }
 
         private void txtfuturo_KeyPress(object sender, KeyPressEventArgs e)
@@ -260,6 +441,11 @@ namespace InteresPratica
                 e.Handled = true;
                 MessageBox.Show("NO SE PUEDEN LETRAS");
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

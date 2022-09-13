@@ -16,18 +16,13 @@ namespace Infraestructure.interes.Repositories
         public double ConvertEfectiva(double nominal, double M)
         {
             double J = nominal / 100;
-            double x = Math.Pow(Math.Sqrt(1 + J -1), M) * M;
+            double x = (Math.Pow(Math.Sqrt(1 + J ), M)-1) * M;
             double y = x * 100;
             double efectiva = Math.Round(x, 2);
             return efectiva;
         }
 
-        public double ConvertExponencial(Interes interes)
-        {
-            double expone = interes.nominal / 100;
-            double efe = Math.Exp(expone) - 1;
-            return efe;
-        }
+
 
         public double ConvertExponencial(double nominal)
         {
@@ -43,9 +38,9 @@ namespace Infraestructure.interes.Repositories
             double J = nominal / 100;
             double x = (Math.Pow(1+J/M,M/M1)-1)*M1;
             double minal = x;
-            double N = minal * 100;
-            double Nominal = Math.Round(N, 2);
-            return Nominal;
+            //double N = minal * 100;
+            //double Nominal = Math.Round(N, 2);
+            return minal;
         }
 
         public void Create(Interes t)
@@ -105,6 +100,24 @@ namespace Infraestructure.interes.Repositories
            
             double x = futuro * Math.Pow(1 + J / M, -1 * M * periodo);
             double presente = Math.Round(x, 2);
+            return presente;
+        }
+
+        public double prueba(double interes, double m, double periodo, double presente, double tiempo)
+        {
+            double t = periodo *tiempo;
+            double i = interes / m;
+            double o = i / 100;
+            double futuro = presente * Math.Pow(1 + o,t);
+            return futuro;
+        }
+
+        public double prueba1(double interes, double m, double periodo, double futuro, double tiempo)
+        {
+            double t = periodo * tiempo;
+            double i = interes / m;
+            double o = i / 100;
+            double presente = futuro / Math.Pow(1 + o, t);
             return presente;
         }
 

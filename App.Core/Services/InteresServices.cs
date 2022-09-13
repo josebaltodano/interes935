@@ -65,5 +65,15 @@ namespace App.Core.Services
         {
             return interes1.GetPresente(nominal, M, futuro, periodo);
         }
+
+        public double prueba(double interes, double m, double periodo, double presente, double tiempo)
+        {
+            return interes1.prueba(interes, m, periodo, presente, tiempo);
+        }
+
+        public double prueba1(double interes, double m, double periodo, double futuro, double tiempo)
+        {
+            return interes1.prueba1(interes, m, periodo, futuro, tiempo);
+        }
     }
 }
