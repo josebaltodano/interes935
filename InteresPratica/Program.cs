@@ -26,7 +26,8 @@ namespace InteresPratica
             builder.RegisterType<RepositoryInteres>().As<IInteres>();
             builder.RegisterType<InteresServices>().As<IINteresServices>();
             var container = builder.Build();
-            Application.Run(new FmrInteres(container.Resolve<IINteresServices>()));
+            Application.Run(new Menu(container.Resolve<IINteresServices>()));
+            ////new FmrInteres(container.Resolve<IINteresServices>();
         }
     }
 }

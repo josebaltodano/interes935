@@ -8,12 +8,9 @@ namespace Domain.interes.Enum
 {
    public enum Tiempo
     {
-        Años,
         Semestres,
         Cuatrimestres,
         Trimestres,
-        Mensual,
-        semanal,
-        dias
+      
     }
 }

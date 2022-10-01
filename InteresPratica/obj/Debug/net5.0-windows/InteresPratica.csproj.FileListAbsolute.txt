@@ -74,4 +74,6 @@ C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\ob
 C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\ref\InteresPratica.dll
 C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.pdb
 C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.genruntimeconfig.cache
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.FmrInteresNosemejante.resources
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.Menu.resources
 C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\InteresPratica\obj\Debug\net5.0-windows\InteresPratica.csproj.CopyComplete

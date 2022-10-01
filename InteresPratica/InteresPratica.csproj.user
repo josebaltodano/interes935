@@ -7,5 +7,11 @@
     <Compile Update="FmrInteres.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FmrInteresNosemejante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

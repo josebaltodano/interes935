@@ -1,7 +1,5 @@
 ﻿using App.Core.Iserveices;
-using Domain.interes.Entities;
 using Domain.interes.Enum;
-using Infraestructure.interes.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,94 +12,31 @@ using System.Windows.Forms;
 
 namespace InteresPratica
 {
-    public partial class FmrInteres : Form
+    public partial class FmrInteresNosemejante : Form
     {
         public IINteresServices iNteresServices;
-     
-        public FmrInteres(IINteresServices iNteres)
+        public FmrInteresNosemejante(IINteresServices iNteres)
         {
-            
             InitializeComponent();
             this.cmbcapitalanual.Items.AddRange(Enum.GetValues(typeof(Producto)).Cast<object>().ToArray());
-            this.cmbcapcuatrimestre.Items.AddRange(Enum.GetValues(typeof(CapMensualmente)).Cast<object>().ToArray());
-            this.cmbcapsemestre.Items.AddRange(Enum.GetValues(typeof(CAPSemestral)).Cast<object>().ToArray());
+            this.cmbcapcuatrimestre.Items.AddRange(Enum.GetValues(typeof(CAPCuatrimestral)).Cast<object>().ToArray());
+            this.comboBox2.Items.AddRange(Enum.GetValues(typeof(CAPSemestral)).Cast<object>().ToArray());
             this.cmbcaptrimsestr.Items.AddRange(Enum.GetValues(typeof(CAPtrimestal)).Cast<object>().ToArray());
-
-
+            this.comboBox1.Items.AddRange(Enum.GetValues(typeof(Tiempo)).Cast<object>().ToArray());
             this.iNteresServices = iNteres;
-            this.cmbmostrasr.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.cmbcapitalanual.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbcaptrimsestr.Visible = false;
-            cmbcapsemestre.Visible = false;
-            cmbcapcuatrimestre.Visible = false;
-
             groupBox1.Visible = false;
+            cmbcapcuatrimestre.Visible = false;
+            cmbcaptrimsestr.Visible = false;
+            comboBox2.Visible = false;
+
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-        public double COsemestral()
-        {
-            double t = 0;
-            if(cmbcapsemestre.SelectedIndex == 0)
-            {
-                t = 1 / 0.5; /*años*/
-                return t;
-            }
-            else
-            {
-                if(cmbcapsemestre.SelectedIndex == 1)
-                {
-                    t = 1 / 1.5;  /*cuatrimestres*/
-                    return t;
-                }
-                else
-                {
-                    if (cmbcapsemestre.SelectedIndex == 2)
-                    {
-                        t = 1 / 2;  
-                        return t;
-                    }
-                    else
-                    {
-                        if(cmbcapsemestre.SelectedIndex == 3)
-                        {
-                            t = 1 / 6;
-                            return t;
-                        }
-                        else
-                        {
-                            if(cmbcapsemestre.SelectedIndex == 4)
-                            {
-                                t = 1 / 26.071428571428573;
-                                return t;
-                            }
-                            else
-                            {
-
-                                if(cmbcapsemestre.SelectedIndex == 5)
-                                {
-                                    t = 1 / 182.5;
-                                    return t;
-                                }
-                                else
-                                {
-                                    return -1;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
         public double CoTrimestral()
         {
-            
+
             if (cmbcaptrimsestr.SelectedIndex == 0)
             {
-                 
+
                 return 1 / 0.25; /*años*/
             }
             else
@@ -109,14 +44,14 @@ namespace InteresPratica
                 if (cmbcaptrimsestr.SelectedIndex == 1)
                 {
 
-                    return 1/0.5; /*semestres*/
+                    return 1 / 0.5; /*semestres*/
                 }
                 else
                 {
                     if (cmbcaptrimsestr.SelectedIndex == 2)
                     {
-                        
-                        return  0.3333333333; /*meses*/
+
+                        return 0.3333333333; /*meses*/
                     }
                     else
                     {
@@ -129,7 +64,7 @@ namespace InteresPratica
                         {
                             if (cmbcaptrimsestr.SelectedIndex == 4)
                             {
-                                 
+
                                 return 1 / 13.035714285714286; /*semanas*/
                             }
                             else
@@ -137,7 +72,7 @@ namespace InteresPratica
 
                                 if (cmbcaptrimsestr.SelectedIndex == 5)
                                 {
-                                    
+
                                     return 1 / 91.25;/* dias*/
                                 }
                                 else
@@ -150,71 +85,8 @@ namespace InteresPratica
                 }
             }
         }
-  
-        public  double Convertaño()
-        {
-            double a = 0;
 
-            if(cmbcapcuatrimestre.SelectedIndex == 0)
-            {
-                a = 1;
-                return a;
-
-            }
-            else
-            {
-                if(cmbcapcuatrimestre.SelectedIndex == 1)
-                {
-                    a = 1 / 30;
-                    return a;
-                }
-                else
-                {
-                    if(cmbcapcuatrimestre.SelectedIndex == 2)
-                    {
-                        a = 7 / 1;
-                        return a;
-                    }
-                    else
-                    {
-                        if(cmbcapcuatrimestre.SelectedIndex == 3)
-                        {
-                            a = 1 / 365;
-                            return a;
-                        }
-                        else
-                        {
-                            if(cmbcapcuatrimestre.SelectedIndex == 4)
-                            {
-                                a = 365 / 1;
-                                return a;
-                            }
-                            else
-                            {
-                                if(cmbcapcuatrimestre.SelectedIndex == 5)
-                                {
-                                    a = 12 / 1;
-                                    return a;
-                                }
-                                else
-                                {
-                                    if(cmbcapcuatrimestre.SelectedIndex == 5)
-                                    {
-                                        a = 1 / 12;
-                                        return a;
-                                    }
-                                    else
-                                    {
-                                        return -1;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        public double  ConvertM()
+        public double ConvertM()
         {
 
             if (cmbcapitalanual.SelectedIndex == 0)
@@ -263,11 +135,40 @@ namespace InteresPratica
             }
         }
 
+        public double periodo()
+        {
+            if (comboBox1.SelectedIndex == 0)
+            {
+                double semes = 2;
+                return semes;
+            }
+            else
+            {
+                if(comboBox1.SelectedIndex == 1)
+                {
+                    double catry = 0;
+                    return catry;
+                }
+                else
+                {
+                    if(comboBox1.SelectedIndex == 2)
+                    {
+                        double tri = CoTrimestral();
+                        return tri;
+                    }
+                    else
+                    {
+                        return -1;
+                    }
+                }
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            double a = Convertaño();
             double m = ConvertM();
             double pruebar = CoTrimestral();
+            double tiemppo = periodo();
+
             //double año = double.Parse(txtxaños.Text) * Convertaño();
             if (cmbmostrasr.SelectedIndex == 0)
             {
@@ -283,11 +184,11 @@ namespace InteresPratica
                     MessageBox.Show("Los Datos No puede ser Negativos  y Tampoco Puden ser cero");
                     return;
                 }
-                label1.Text = iNteresServices.Getfuturo(double.Parse(txtinteres.Text),m,double.Parse(txtpresente.Text),double.Parse(txtxaños.Text)).ToString();
+                label1.Text = iNteresServices.prueba(double.Parse(txtinteres.Text), m, double.Parse(txtxaños.Text), double.Parse(txtpresente.Text), pruebar).ToString();
             }
             else
             {
-                if(cmbmostrasr.SelectedIndex == 1)
+                if (cmbmostrasr.SelectedIndex == 1)
                 {
 
                     if (string.IsNullOrEmpty(txtfuturo.Text) || string.IsNullOrEmpty(txtinteres.Text) || string.IsNullOrEmpty(txtxaños.Text))
@@ -303,11 +204,11 @@ namespace InteresPratica
                         return;
                     }
 
-                    label1.Text = iNteresServices.GetPresente(double.Parse(txtinteres.Text), m, double.Parse(txtfuturo.Text), double.Parse(txtxaños.Text)).ToString();
+                    label1.Text = iNteresServices.prueba1(double.Parse(txtinteres.Text),m,double.Parse(txtxaños.Text),double.Parse(txtfuturo.Text),pruebar).ToString();
                 }
                 else
                 {
-                    if(cmbmostrasr.SelectedIndex == 2)
+                    if (cmbmostrasr.SelectedIndex == 2)
                     {
 
                         if (string.IsNullOrEmpty(txtpresente.Text) || string.IsNullOrEmpty(txtinteres.Text) || string.IsNullOrEmpty(txtpresente.Text))
@@ -330,35 +231,22 @@ namespace InteresPratica
                 }
             }
             Clean();
-            
-            
-          
         }
-   
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        private void Clean()
         {
-            if (char.IsLetter(e.KeyChar))
-            {
-                e.Handled = true;
-                MessageBox.Show("NO SE PUEDEN LETRAS");
-            }
+            txtfuturo.Clear();
+            txtinteres.Clear();
+            txtpresente.Clear();
+            txtxaños.Clear();
+            cmbcapitalanual.SelectedIndex = -1;
         }
-
-    
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
- 
 
         private void cmbmostrasr_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cmbmostrasr.SelectedIndex == 0)
+            if (cmbmostrasr.SelectedIndex == 0)
             {
-                 txtfuturo.Visible = false;
+                txtfuturo.Visible = false;
                 lblfuturo.Visible = false;
                 llbpresente.Visible = true;
                 txtpresente.Visible = true;
@@ -369,7 +257,7 @@ namespace InteresPratica
             }
             else
             {
-                if(cmbmostrasr.SelectedIndex == 1)
+                if (cmbmostrasr.SelectedIndex == 1)
                 {
                     txtpresente.Visible = false;
                     llbpresente.Visible = false;
@@ -381,7 +269,7 @@ namespace InteresPratica
                 }
                 else
                 {
-                    if(cmbmostrasr.SelectedIndex == 2)
+                    if (cmbmostrasr.SelectedIndex == 2)
                     {
                         groupBox1.Visible = true;
                         txtxaños.Visible = false;
@@ -394,7 +282,7 @@ namespace InteresPratica
                     }
                     else
                     {
-                        if(cmbmostrasr.SelectedIndex == 3)
+                        if (cmbmostrasr.SelectedIndex == 3)
                         {
                             groupBox1.Visible = false;
                             FmrConvertidor fmr = new FmrConvertidor(iNteresServices);
@@ -406,18 +294,17 @@ namespace InteresPratica
             }
         }
 
-        private void Clean()
-        {
-            txtfuturo.Clear();
-            txtinteres.Clear();
-            txtpresente.Clear();
-            txtxaños.Clear();
-            cmbcapitalanual.SelectedIndex =- 1;
-        }
-
         private void txtfuturo_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("NO SE PUEDEN LETRAS");
+            }
+        }
 
+        private void txtpresente_KeyPress(object sender, KeyPressEventArgs e)
+        {
             if (char.IsLetter(e.KeyChar))
             {
                 e.Handled = true;
@@ -427,7 +314,6 @@ namespace InteresPratica
 
         private void txtinteres_KeyPress(object sender, KeyPressEventArgs e)
         {
-
             if (char.IsLetter(e.KeyChar))
             {
                 e.Handled = true;
@@ -437,7 +323,6 @@ namespace InteresPratica
 
         private void txtxaños_KeyPress(object sender, KeyPressEventArgs e)
         {
-
             if (char.IsLetter(e.KeyChar))
             {
                 e.Handled = true;
@@ -445,14 +330,32 @@ namespace InteresPratica
             }
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
+            if (comboBox1.SelectedIndex == 0)
+            {
+                cmbcapcuatrimestre.Visible = false;
+                cmbcaptrimsestr.Visible = false;
+                comboBox2.Visible = true;
+            }
+            else
+            {
+                if (comboBox1.SelectedIndex == 1)
+                {
+                    cmbcapcuatrimestre.Visible = true;
+                    cmbcaptrimsestr.Visible = false;
+                    comboBox2.Visible = false;
+                }
+                else
+                {
+                    if (comboBox1.SelectedIndex == 2)
+                    {
+                        cmbcapcuatrimestre.Visible = false;
+                        cmbcaptrimsestr.Visible = true;
+                        comboBox2.Visible = false;
+                    }
+                }
+            }
         }
     }
 }

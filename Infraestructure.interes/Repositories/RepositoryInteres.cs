@@ -108,15 +108,16 @@ namespace Infraestructure.interes.Repositories
             double t = periodo *tiempo;
             double i = interes / m;
             double o = i / 100;
-            double futuro = presente * Math.Pow(1 + o,t);
-            return futuro;
+            double futuro = presente * (Math.Pow(1 + o,t));
+            double f = Math.Round(futuro, 2);
+            return f;
         }
 
         public double prueba1(double interes, double m, double periodo, double futuro, double tiempo)
         {
             double t = periodo * tiempo;
             double i = interes / m;
-            double o = i / 100;
+            double o = i/100;
             double presente = futuro / Math.Pow(1 + o, t);
             return presente;
         }

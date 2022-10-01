@@ -46,10 +46,11 @@ namespace InteresPratica
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.cmbcaptrimsestr = new System.Windows.Forms.ComboBox();
             this.cmbtiempo = new System.Windows.Forms.ComboBox();
             this.cmbcapcuatrimestre = new System.Windows.Forms.ComboBox();
-            this.cmbcaptrimsestr = new System.Windows.Forms.ComboBox();
             this.cmbcapsemestre = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -136,9 +137,9 @@ namespace InteresPratica
             this.lblaños.AutoSize = true;
             this.lblaños.Location = new System.Drawing.Point(47, 191);
             this.lblaños.Name = "lblaños";
-            this.lblaños.Size = new System.Drawing.Size(47, 15);
+            this.lblaños.Size = new System.Drawing.Size(48, 15);
             this.lblaños.TabIndex = 10;
-            this.lblaños.Text = "Tiempo";
+            this.lblaños.Text = "Periodo";
             // 
             // llbcapital
             // 
@@ -213,32 +214,16 @@ namespace InteresPratica
             this.groupBox1.TabIndex = 43;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Calculos";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(409, 36);
+            this.label4.Location = new System.Drawing.Point(283, 173);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 15);
+            this.label4.Size = new System.Drawing.Size(0, 15);
             this.label4.TabIndex = 43;
-            this.label4.Text = "label4";
             this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // cmbtiempo
-            // 
-            this.cmbtiempo.FormattingEnabled = true;
-            this.cmbtiempo.Location = new System.Drawing.Point(783, 141);
-            this.cmbtiempo.Name = "cmbtiempo";
-            this.cmbtiempo.Size = new System.Drawing.Size(213, 23);
-            this.cmbtiempo.TabIndex = 46;
-            // 
-            // cmbcapcuatrimestre
-            // 
-            this.cmbcapcuatrimestre.FormattingEnabled = true;
-            this.cmbcapcuatrimestre.Location = new System.Drawing.Point(783, 94);
-            this.cmbcapcuatrimestre.Name = "cmbcapcuatrimestre";
-            this.cmbcapcuatrimestre.Size = new System.Drawing.Size(213, 23);
-            this.cmbcapcuatrimestre.TabIndex = 44;
             // 
             // cmbcaptrimsestr
             // 
@@ -248,6 +233,22 @@ namespace InteresPratica
             this.cmbcaptrimsestr.Size = new System.Drawing.Size(213, 23);
             this.cmbcaptrimsestr.TabIndex = 45;
             // 
+            // cmbtiempo
+            // 
+            this.cmbtiempo.FormattingEnabled = true;
+            this.cmbtiempo.Location = new System.Drawing.Point(783, 150);
+            this.cmbtiempo.Name = "cmbtiempo";
+            this.cmbtiempo.Size = new System.Drawing.Size(213, 23);
+            this.cmbtiempo.TabIndex = 46;
+            // 
+            // cmbcapcuatrimestre
+            // 
+            this.cmbcapcuatrimestre.FormattingEnabled = true;
+            this.cmbcapcuatrimestre.Location = new System.Drawing.Point(702, 285);
+            this.cmbcapcuatrimestre.Name = "cmbcapcuatrimestre";
+            this.cmbcapcuatrimestre.Size = new System.Drawing.Size(213, 23);
+            this.cmbcapcuatrimestre.TabIndex = 44;
+            // 
             // cmbcapsemestre
             // 
             this.cmbcapsemestre.FormattingEnabled = true;
@@ -256,12 +257,22 @@ namespace InteresPratica
             this.cmbcapsemestre.Size = new System.Drawing.Size(213, 23);
             this.cmbcapsemestre.TabIndex = 47;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(781, 259);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(84, 15);
+            this.label5.TabIndex = 48;
+            this.label5.Text = "Periodo nuevo";
+            // 
             // FmrInteres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(1008, 501);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.cmbcapsemestre);
             this.Controls.Add(this.cmbtiempo);
             this.Controls.Add(this.cmbcapcuatrimestre);
@@ -300,6 +311,7 @@ namespace InteresPratica
         private System.Windows.Forms.ComboBox cmbtiempo;
         private System.Windows.Forms.ComboBox cmbcaptrimsestr;
         private System.Windows.Forms.ComboBox cmbcapsemestre;
+        private System.Windows.Forms.Label label5;
     }
 }
 
