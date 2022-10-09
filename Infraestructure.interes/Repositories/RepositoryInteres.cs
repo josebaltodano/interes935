@@ -16,9 +16,9 @@ namespace Infraestructure.interes.Repositories
         public double ConvertEfectiva(double nominal, double M)
         {
             double J = nominal / 100;
-            double x = (Math.Pow(Math.Sqrt(1 + J ), M)-1) * M;
-            double y = x * 100;
-            double efectiva = Math.Round(x, 2);
+            double x = (Math.Pow(Math.Sqrt(1 + J ), M)-1)*M ;
+            double y = x;
+            double efectiva = Math.Round(y, 2);
             return efectiva;
         }
 
@@ -38,9 +38,9 @@ namespace Infraestructure.interes.Repositories
             double J = nominal / 100;
             double x = (Math.Pow(1+J/M,M/M1)-1)*M1;
             double minal = x;
-            //double N = minal * 100;
-            //double Nominal = Math.Round(N, 2);
-            return minal;
+            double N = minal * 100;
+            double Nominal = Math.Round(N, 2);
+            return Nominal;
         }
 
         public void Create(Interes t)

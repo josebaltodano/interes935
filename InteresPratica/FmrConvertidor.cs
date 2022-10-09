@@ -69,13 +69,13 @@ namespace InteresPratica
             }
         }
 
-        public double ConvertM()
+        public double capitalizable()
         {
 
             if (cmbactual.SelectedIndex == 0)
             {
-                double M = 1;
-                return M;
+                
+                return 1;
             }
             else
             {
@@ -104,6 +104,53 @@ namespace InteresPratica
                             else
                             {
                                 if (cmbactual.SelectedIndex == 5)
+                                {
+                                    return 52;
+                                }
+                                else
+                                {
+                                    return -1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        public double cmxd()
+        {
+            if (cmbnominal.SelectedIndex == 0)
+            {
+               
+                return 1;
+            }
+            else
+            {
+                if (cmbnominal.SelectedIndex == 1)
+                {
+                    return 4;
+                }
+                else
+                {
+                    if (cmbnominal.SelectedIndex == 2)
+                    {
+                        return 3;
+                    }
+                    else
+                    {
+                        if (cmbnominal.SelectedIndex == 3)
+                        {
+                            return 12;
+                        }
+                        else
+                        {
+                            if (cmbnominal.SelectedIndex == 4)
+                            {
+                                return 2;
+                            }
+                            else
+                            {
+                                if (cmbnominal.SelectedIndex == 5)
                                 {
                                     return 52;
                                 }
@@ -215,8 +262,10 @@ namespace InteresPratica
             }
         }
 
+       
         private void btnnominal_Click(object sender, EventArgs e)
         {
+          
             if (string.IsNullOrEmpty(texnominal.Text))
             {
                 MessageBox.Show("Tienes que rellenar todos los formularios.");
@@ -227,8 +276,8 @@ namespace InteresPratica
                 MessageBox.Show("Los Datos No puede ser Negativos  y Tampoco Puden ser cero");
                 return;
             }
-            double M = ConvertM();
-            label12.Text = iNteresServices.ConvertEfectiva(double.Parse(texnominal.Text), M).ToString();
+            double xd = cmxd();
+            label12.Text = iNteresServices.ConvertEfectiva(double.Parse(texnominal.Text), xd).ToString();
           
         }
 
@@ -245,7 +294,7 @@ namespace InteresPratica
                 MessageBox.Show("Los Datos No puede ser Negativos  y Tampoco Puden ser cero");
                 return;
             }
-            double m1 = ConvertM();
+            double m1 = capitalizable();
             double m2 = ConvertM1();
             label16.Text = iNteresServices.ConvetNominal(double.Parse(txtxotranominal.Text), m1, m2).ToString();
             

@@ -219,8 +219,7 @@ namespace InteresPratica
 
             if (cmbcapitalanual.SelectedIndex == 0)
             {
-                double M = 1;
-                return M;
+                return  1;
             }
             else
             {

@@ -30,7 +30,7 @@ namespace InteresPratica
             comboBox2.Visible = false;
 
         }
-
+        public double pruebar;
         public double CoTrimestral()
         {
 
@@ -134,27 +134,200 @@ namespace InteresPratica
                 }
             }
         }
+        public double COSemestral()
+        {
+            return 0;
+        }
+        public double semestral()
+        {
+            if (comboBox2.SelectedIndex == 0)
+            {
 
+                return 1 / 0.5; /*años*/
+            }
+            else
+            {
+                if (comboBox2.SelectedIndex == 1)
+                {
+
+                    return 1 / 1.5; /*cuatrimestres*/
+                }
+                else
+                {
+                    if (comboBox2.SelectedIndex == 2)
+                    {
+
+                        return 1 / 2;/*trimestres*/
+                    }
+                    else
+                    {
+                        if (comboBox2.SelectedIndex == 3)
+                        {
+
+                            return 1 / 6;/*meses*/
+                        }
+                        else
+                        {
+                            if (comboBox2.SelectedIndex == 4)
+                            {
+
+                                return 1 / 26.071428571428573; /*semanas*/
+                            }
+                            else
+                            {
+
+                                if (comboBox2.SelectedIndex == 5)
+                                {
+
+                                    return 1 / 182.5;/* dias*/
+                                }
+                                else
+                                {
+                                    return -1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        public double cuatrimestral()
+        {
+            if (cmbcapcuatrimestre.SelectedIndex == 0)
+            {
+
+                return 1 / 0.3333333333333333; /*años*/
+            }
+            else
+            {
+                if (cmbcapcuatrimestre.SelectedIndex == 1)
+                {
+
+                    return 1 / 0.6666666666666666; /*semestres*/
+                }
+                else
+                {
+                    if (cmbcapcuatrimestre.SelectedIndex == 2)
+                    {
+
+                        return 1 / 1.3333333333333333; /*trimestres*/
+                    }
+                    else
+                    {
+                        if (cmbcapcuatrimestre.SelectedIndex == 3)
+                        {
+
+                            return 1 / 4; /*meses*/
+                        }
+                        else
+                        {
+                            if (cmbcapcuatrimestre.SelectedIndex == 4)
+                            {
+
+                                return 1 / 17.38095238095238; /*semanas*/
+                            }
+                            else
+                            {
+
+                                if (cmbcapcuatrimestre.SelectedIndex == 5)
+                                {
+
+                                    return 1 / 121.66666666666667;/* dias*/
+                                }
+                                else
+                                {
+                                    return -1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        public double anual()
+        {
+            if (comboBox3.SelectedIndex == 0)
+            {
+
+                return 1 / 2; /*semestres*/
+            }
+            else
+            {
+                if (comboBox3.SelectedIndex == 1)
+                {
+
+                    return 1 / 4; /*trismestres*/
+                }
+                else
+                {
+                    if (comboBox3.SelectedIndex == 2)
+                    {
+
+                        return 1 / 3; /*cuatrimestres*/
+                    }
+                    else
+                    {
+                        if (comboBox3.SelectedIndex == 3)
+                        {
+
+                            return 1 / 12; /*Mensual*/
+                        }
+                        else
+                        {
+                            if (comboBox3.SelectedIndex == 4)
+                            {
+
+                                return 1 / 52; /*semanas*/
+                            }
+                            else
+                            {
+
+                                if (cmbcapcuatrimestre.SelectedIndex == 5)
+                                {
+
+                                    return 1 / 365;/* dias*/
+                                }
+                                else
+                                {
+                                    return -1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         public double periodo()
         {
             if (comboBox1.SelectedIndex == 0)
             {
-                double semes = 2;
-                return semes;
+                if(cmbcaptrimsestr.SelectedIndex ==-1 && comboBox2.SelectedIndex == -1)
+                {
+                    pruebar = cuatrimestral();
+                }
+                
+                return pruebar;
             }
             else
             {
                 if(comboBox1.SelectedIndex == 1)
                 {
-                    double catry = 0;
-                    return catry;
+                    if (cmbcapcuatrimestre.SelectedIndex == -1 && cmbcaptrimsestr.SelectedIndex == -1)
+                    {
+                        pruebar = semestral();
+                    }
+                    return pruebar;
                 }
                 else
                 {
                     if(comboBox1.SelectedIndex == 2)
                     {
-                        double tri = CoTrimestral();
-                        return tri;
+                        if (cmbcapcuatrimestre.SelectedIndex == -1 && comboBox2.SelectedIndex == -1)
+                        {
+                            pruebar = CoTrimestral();
+                        }
+
+                        return CoTrimestral();
                     }
                     else
                     {
@@ -163,10 +336,11 @@ namespace InteresPratica
                 }
             }
         }
+         
         private void button1_Click(object sender, EventArgs e)
         {
             double m = ConvertM();
-            double pruebar = CoTrimestral();
+            //double pruebar = CoTrimestral();
             double tiemppo = periodo();
 
             //double año = double.Parse(txtxaños.Text) * Convertaño();
@@ -184,7 +358,7 @@ namespace InteresPratica
                     MessageBox.Show("Los Datos No puede ser Negativos  y Tampoco Puden ser cero");
                     return;
                 }
-                label1.Text = iNteresServices.prueba(double.Parse(txtinteres.Text), m, double.Parse(txtxaños.Text), double.Parse(txtpresente.Text), pruebar).ToString();
+                label1.Text = iNteresServices.prueba(double.Parse(txtinteres.Text), m, double.Parse(txtxaños.Text), double.Parse(txtpresente.Text),pruebar).ToString();
             }
             else
             {
@@ -240,6 +414,12 @@ namespace InteresPratica
             txtpresente.Clear();
             txtxaños.Clear();
             cmbcapitalanual.SelectedIndex = -1;
+            comboBox1.SelectedIndex = -1;
+            cmbcapcuatrimestre.SelectedIndex = -1;
+            cmbcaptrimsestr.SelectedIndex = -1;
+            comboBox2.SelectedIndex = -1;
+
+
         }
 
         private void cmbmostrasr_SelectedIndexChanged(object sender, EventArgs e)

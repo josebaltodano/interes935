@@ -195,7 +195,6 @@ namespace InteresPratica
             // 
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtxaños);
-            this.groupBox1.Controls.Add(this.cmbcaptrimsestr);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtpresente);
             this.groupBox1.Controls.Add(this.txtfuturo);
@@ -228,7 +227,7 @@ namespace InteresPratica
             // cmbcaptrimsestr
             // 
             this.cmbcaptrimsestr.FormattingEnabled = true;
-            this.cmbcaptrimsestr.Location = new System.Drawing.Point(222, 191);
+            this.cmbcaptrimsestr.Location = new System.Drawing.Point(718, 219);
             this.cmbcaptrimsestr.Name = "cmbcaptrimsestr";
             this.cmbcaptrimsestr.Size = new System.Drawing.Size(213, 23);
             this.cmbcaptrimsestr.TabIndex = 45;
@@ -274,6 +273,7 @@ namespace InteresPratica
             this.ClientSize = new System.Drawing.Size(1008, 501);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cmbcapsemestre);
+            this.Controls.Add(this.cmbcaptrimsestr);
             this.Controls.Add(this.cmbtiempo);
             this.Controls.Add(this.cmbcapcuatrimestre);
             this.Controls.Add(this.groupBox1);
