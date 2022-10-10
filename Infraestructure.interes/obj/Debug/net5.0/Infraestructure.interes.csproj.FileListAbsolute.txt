@@ -41,3 +41,4 @@ C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.i
 C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\obj\Debug\net5.0\Infraestructure.interes.dll
 C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\obj\Debug\net5.0\ref\Infraestructure.interes.dll
 C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\obj\Debug\net5.0\Infraestructure.interes.pdb
+C:\Users\Cristina\OneDrive\Escritorio\Nueva carpeta\interes935\Infraestructure.interes\obj\Debug\net5.0\Infraestructure.interes.csproj.CopyComplete

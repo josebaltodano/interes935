@@ -8,13 +8,12 @@ namespace Domain.interes.Enum
 {
     public  enum CapMensualmente
     {
-        de_dias_A_meses ,
-        demesesaDias ,
-        desemasadias,
-        dediasaAñós  ,
-        DEAÑOSADIAS ,
-        DEAÑOSAMESES ,
-        DEMESEAAÑOS ,
+        trimestres,
+        cuatrimestres,
+        Mensual,
+        semestre,
+        Semanal,
+        DIas
 
     }
 }

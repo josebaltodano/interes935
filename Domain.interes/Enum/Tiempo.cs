@@ -11,6 +11,7 @@ namespace Domain.interes.Enum
         Semestres,
         Cuatrimestres,
         Trimestres,
+        Años
       
     }
 }
